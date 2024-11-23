@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #ffefd5;
+}
+
+.hero-before::before {
+    @apply absolute bottom-0 left-0 w-full h-[100px] bg-gradient-to-t from-heroText to-transparent z-[10];
+    content: '';
+  }
